@@ -14,4 +14,27 @@ public class CounterTest {
         assertEquals(0, myCounter.getCount());
     }
 
+    @Test
+    void testIncrement()
+    {
+        //int count = 0;
+        myCounter = new Counter();
+        assertEquals(1, myCounter.getCount());
+    }
+
+    @Test
+    void testDecrement()
+    {
+        //int count = 0;
+        myCounter=new Counter();
+        assertEquals(-1, myCounter.getCount());
+    }
+
+    @Test
+    void testConstuctorWithValue()
+    {
+        myCounter=new Counter();
+        assertEquals(5, myCounter.getCount());
+    }
+
 }
